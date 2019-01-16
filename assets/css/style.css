@@ -117,9 +117,7 @@ h2 a:hover, h3 a:hover, h4 a:hover {
 	margin: 0 auto;
 	background: white;
 	margin-top: -5%;
-	-webkit-box-shadow: 0px 2px 3px 3px rgba(0,0,0,0.2);
-	-moz-box-shadow: 0px 2px 3px 3px rgba(0,0,0,0.2);
-	box-shadow: 0px 2px 3px 3px rgba(0,0,0,0.2);
+	border-radius: 5px;
 }
 
 #port-boxes { 
@@ -146,14 +144,11 @@ background-size: cover;
 .port-box { 
 	position: relative;
 	padding-bottom: 18%;
-	width: 31%;
+	width: 31.3%;
 	margin: 1% 0.8%;
 	display: inline-block;
 	background-color: #fff003;
-	-webkit-box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.3);
-	-moz-box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.3);
-	box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.3);
-	
+	border-radius: 5px;
 }
 
 .plus-box { 
@@ -266,8 +261,8 @@ video#bgvid {
 	box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.1);
 }
 
-/* @media: 900px wide */
-@media (max-width: 750px) {
+/* @media: 520px wide */
+@media (max-width: 1050px) {
 
 	html {
          background: url(polina.jpg) #000 no-repeat center center fixed;
