@@ -107,7 +107,7 @@ h2 a:hover, h3 a:hover, h4 a:hover {
 	margin: 0 auto;
 	background: url('../img/logo-outline.png') 50% 85% no-repeat,
 				url('../img/hypnotize.png');
-	border-top: 5px solid #e7e7e7;
+	border-top: 10px solid #e7e7e7;
 	padding: 1vh 0 10vh 0;
 	bottom:0;
 }
@@ -227,9 +227,10 @@ video#bgvid {
 	cursor:pointer;
 }
 
-.expandProject { 
+.expand-project { 
 	width: 96%;
-	padding: 0 2%;
+	padding: 2% 2%;
+	background: url('../img/congruent_outline.png') 0% 0%;
 }
 
 .tags { 
@@ -314,4 +315,9 @@ video#bgvid {
 		height: 10vw;
 		width: 10vw;
     }
+
+    #port-boxes a:hover .plus-box{ 
+	width: 15vw;
+	border-left: 2vw solid #f6ff00;
+	}
 } 
