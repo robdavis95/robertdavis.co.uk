@@ -1,5 +1,15 @@
 *{margin: 0;padding:0;color:white; font-family: 'Droid Serif', serif;}
 
+@keyframes backgroundScroll {
+    from {background-position: 0 0;}
+    to {background-position: 0px 300px;}
+}
+
+@-webkit-keyframes backgroundScroll {
+    from {background-position: 0 0;}
+    to {background-position: 0px 300px;}
+}
+
 html,body {
 	max-width: 100%;
     overflow-x: hidden;
@@ -21,6 +31,10 @@ body {
 	background: url('../img/congruent_outline.png');
 	background-color:#333333;
 	width: 100%;
+	-webkit-animation: backgroundScroll 40s linear infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation: backgroundScroll 40s linear infinite;
+    animation-fill-mode: forwards;
 }
 
 header {
@@ -127,12 +141,12 @@ h2 a:hover, h3 a:hover, h4 a:hover {
 }
 
 #one { 
-background: url('../img/Dissertation Project Still.png') 50% 50% no-repeat;
+background: url('../img/heritage-forge-vr.png') 50% 50% no-repeat;
 background-size: cover;
 }
 
 #two { 
-background: url('../img/example.jpg') 50% 50% no-repeat;
+background: url('../img/Dissertation Project Still.png') 50% 50% no-repeat;
 background-size: cover;
 }
 
@@ -317,7 +331,7 @@ video#bgvid {
     }
 
     #port-boxes a:hover .plus-box{ 
-	width: 15vw;
-	border-left: 2vw solid #f6ff00;
+	width: 13vw;
+	border-left: 1vw solid #f6ff00;
 	}
 } 
