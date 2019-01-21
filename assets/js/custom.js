@@ -6,7 +6,8 @@ $(function() {
 	var linkLondon = $("#linkLondon");
 	var linkLincoln = $("#linkLincoln");
 	var expand_box = $("#expand-box");
-	var isExpanded = false;
+	var port_expand_box = $("#port_expand_box");
+	var isMapExpanded = false;
 	var cachedLocation = ""
 
 	var linkPortBoxOne = $("#one");
@@ -17,30 +18,26 @@ $(function() {
 	var linkProjectBoxThree = $(".project-three");
 	var projectOverlayExit = $(".project-overlay-exit");
 
-	function window_width() { 
-		return $(window).width();
-	}
-
 	function expandMap(locationURL) { 
 
 		var googleMapUrl = '<div class="overlay" onClick="style.pointerEvents="none"></div><iframe src="https:\/\/www.google.com/maps/'+locationURL+' height="300" frameborder="0" style="frameborder:0" allowfullscreen></iframe>' 
 		console.log(googleMapUrl)
 		
-		if (isExpanded === false) { 
+		if (isMapExpanded === false) { 
 			// Expand box + add map
 			expand_box.html(googleMapUrl);
 			expand_box.slideToggle(200);
-			isExpanded = true;
+			isMapExpanded = true;
 			cachedLocation = locationURL;
 		} else if (cachedLocation != locationURL) {
 			// Just add map
 			expand_box.html(googleMapUrl);
-			isExpanded = true;
+			isMapExpanded = true;
 			cachedLocation = locationURL;
 		} else { 
 			// Close box
 			expand_box.slideToggle(200);
-			isExpanded = false;
+			isMapExpanded = false;
 		}
 	};
 
@@ -52,6 +49,15 @@ $(function() {
 		expandMap(londonUrl);
 	});
 
+	function expandPortBox() {
+		port_expand_box.slideToggle(400);
+		$([document.documentElement, document.body]).animate({scrollTop: port_expand_box.offset().top}, 5000);
+	};
+
+	function hidePortBox() {
+		port_expand_box.slideToggle(400);
+	};
+
 	linkPortBoxOne.click(function() { 
 		console.log('one');
 	});
@@ -62,6 +68,7 @@ $(function() {
 
 	linkPortBoxThree.click(function() { 
 		console.log('three');
+		expandPortBox();
 	});
 
 	projectOverlayExit.click(function() { 
