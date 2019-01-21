@@ -23,7 +23,7 @@
     <meta property="fb:page_id" content="robertdavisadam">
     <meta property="og:title" content="Robert Davis, UK-based developer" />
     <meta property="og:site_name" content="Robert Davis Portfolio"/>
-    <meta property="og:description" content="Robert Davis: British programmer, BSc Computer Science student at the University of Lincoln, UK" />
+    <meta property="og:description" content="Robert Davis: British developer, BSc Computer Science graduate at the University of Lincoln, UK" />
     <meta property="og:type" content="website">
     <meta property="article:author" content="https://www.facebook.com/robertdavisadam" />
 	<meta property="article:publisher" content="https://www.facebook.com/robertdavisadam" />
@@ -48,6 +48,7 @@
 	<meta name="msapplication-TileImage" content="/mstile-144x144.png">
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Droid+Serif|Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!-- CSS styling -->
 	<link type="text/css" rel=stylesheet href="assets/css/style.css">
 	<!--<link type="text/css" rel=stylesheet href="assets/css/style-min.css">-->
@@ -73,12 +74,12 @@
 			<h1>DAVIS</h1>
 		</a>
 		<span class="break-5vh"></span>
-		<h2>QA Games Tester at <a href="https://www.rockstargames.com/" target="_blank" title="Rockstar Games website">Rockstar Lincoln</a>. Software developer in <a id="linkLondon" title="Open a map of London">London</a> /
-								  <a id="linkLincoln" title="Open a map of Lincoln">Lincoln</a>, UK.
-		</h2> 
+		<h2>• QA Games Tester at <a href="https://www.rockstargames.com/" target="_blank" title="Rockstar Games website">Rockstar Lincoln. <i class="material-icons">open_in_new</i></a></h2><br>
+		<h2>• Software developer in <a id="linkLondon" title="Open a map of London">London</a> / <a id="linkLincoln" title="Open a map of Lincoln">Lincoln</a>, UK.</h2> 
 		<div id="expand-box"><div class="overlay" onClick="style.pointerEvents='none'"></div></div>
-		<h2>First Class BSc (Hons) Computer Science graduate at the <a href="http://www.lincoln.ac.uk/home/course/cmpcmsub/" target="_blank" title="University of Lincoln BSc Computer Science course website">University of Lincoln, UK</a>.</h2>
-		<h3><a href="mailto:me@robertdavis.co.uk?subject=Hi%20Rob!" target="_blank" title="My email address" id="email">me@robertdavis.co.uk</a></h3>	
+		<h2>• First Class BSc (Hons) Computer Science graduate at the <a href="http://www.lincoln.ac.uk/home/course/cmpcmsub/" target="_blank" title="University of Lincoln BSc Computer Science course website">University of Lincoln, UK. <i class="material-icons md-18">open_in_new</i></a></h2>
+		<br><br><br>
+		<h3><a href="mailto:me@robertdavis.co.uk?subject=Hi%20Rob!" target="_blank" title="My email address" id="email"><i class="material-icons md-48">email</i> me@robertdavis.co.uk</a></h3>
 		<ul id="logos">
 			<a href="https://github.com/robdavis95" target="_blank">
 				<li class="logo" class="github"><img src="assets/img/github.png" alt="The logo for GitHub. Clicking this link will take you to my GitHub profile." title="My GitHub Profile"/></li>
@@ -97,19 +98,19 @@
 	<div id="portfolio">
 		<div id="portfolio-wrap">
 			<ul id="port-boxes">
-				<a href="#three">
+				<a>
 					<li class="port-box" id="three">
 					    <div class="overlay"></div>
 						<div class="plus-box"></div>
 					</li>
 				</a>
-				<a href="https://www.youtube.com/watch?v=N1kqBtfwzhA&feature=youtu.be" target="_blank">
+				<a>
 					<li class="port-box" id="two">
 					    <div class="overlay"></div>
 						<div class="plus-box"></div>
 					</li>
 				</a>
-				<a href="https://www.youtube.com/watch?v=bJvG35SPK6w" target="_blank">
+				<a>
 					<li class="port-box" id="one">
 						<div class="overlay"></div>
 						<div class="plus-box"></div>
@@ -117,12 +118,15 @@
 				</a>
 			</ul>
 			<div id="port_expand_box" class="expand-project">
-				<div class="project-box-header">				
-					<h1>Dissertation: Using Virtual Reality for Education</h1>
+				<div id="project-box-header">				
+					<h1 id="project-title"></h1>
 					<div class="project-overlay-exit"></div>
 				</div>
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/3DBrG2YjqQA" frameborder="0" allowfullscreen></iframe>
-				<div class="project-box-footer">	
+				<div id="project-box-wrap">
+					<iframe id="youtube_video" style="background: #606060;" width="50%" height="315" frameborder="0" float="left" allowfullscreen></iframe>
+					<p id="project-description">Lorem ipsum dolor sit amet, no malis mediocritatem sed, te mea recusabo reprimique, pri movet dictas an. Ut sea brute vitae verear, eu odio nibh aliquid vim, ei adhuc fabulas pri. Ceteros vulputate definiebas per ut. Graeci sapientem eos ex, an diam graeci numquam nam, mei etiam possit dolorem et.</p>
+				</div>
+				<div id="project-box-footer">	
 					<ul class="tags">
 						<li>Scripting</li>
 						<li>Linear</li>
@@ -131,7 +135,6 @@
 					</ul>
 				</div>
 			</div>
-		</br></br></br>
 	</div>
 </body>
 </html>
