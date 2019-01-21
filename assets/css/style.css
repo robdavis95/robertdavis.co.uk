@@ -15,6 +15,13 @@ html,body {
     overflow-x: hidden;
 }
 
+::selection {
+  background: #f6ff00; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #f6ff00; /* Gecko Browsers */
+}
+
 .material-icons {
 	font-size: 18px;
 }
@@ -35,9 +42,9 @@ body {
 	background: url('../img/congruent_outline.png');
 	background-color:#333333;
 	width: 100%;
-	-webkit-animation: backgroundScroll 20s linear infinite;
+	-webkit-animation: backgroundScroll 25s linear infinite;
     -webkit-animation-fill-mode: forwards;
-    animation: backgroundScroll 40s linear infinite;
+    animation: backgroundScroll 25s linear infinite;
     animation-fill-mode: forwards;
 }
 
@@ -246,6 +253,7 @@ video#bgvid {
 	padding: 2% 2%;
 	background: url('../img/congruent_outline.png') 0% 0%;
 	display: none;
+	border-radius: 20px; 
 }
 
 #project-box-header, #project-box-footer {
@@ -276,13 +284,13 @@ video#bgvid {
 	text-align: left;
 }
 
-.tags { 
+#tags { 
 	right: 0;
 	float:right;
 	overflow: overlay;
 }
 
-.tags li { 
+#tags li { 
 	background: #f4f4f4;
 	padding: 5px 10px;
 	margin: 5px 2px;
@@ -297,7 +305,7 @@ video#bgvid {
 	box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.1);
 }
 
-.tags li:hover { 
+#tags li:hover { 
 	border: 1px solid #d0d0d0;
 	-webkit-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.1);
 	-moz-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.1);
@@ -336,7 +344,7 @@ video#bgvid {
         display: none;
     }
 
-    #youtube_video {
+    #project-video {
 		width: 100%;
 		height: auto;
     }
